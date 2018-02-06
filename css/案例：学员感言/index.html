@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--实现思路
+1、项目目录
+2、分析结构,写HTML
+3、写CSS
+    写全局CSS
+
+经验:
+div 一般使用class 很少使用id
+div 主要用于大块的布局,能不用div就不用div
+div span 默认什么边距都没有
+
+网页整体式流式布局,如果想脱离流式布局,比如实现 右上角的"more",就需要使用浮动
+一旦浮动就变成块元素了
+
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="message">
+
+        <div class="title">
+            <!--左浮动
+            <span>+MORE</span> 从此处就可以充分理解,除了CSS、JS 页面就是由文字和标签拼接起来的
+            -->
+            <span class="span1"><span class="red">学员</span>感言</span>
+            <!--右浮动
+            可以在span嵌套a标签
+            -->
+            <span class="span2"><a href="#">+MORE</a></span>
+        </div>
+
+        <div class="content">
+            <!--左浮动 img 是单标记???-->
+            <img src="images/Snip20170714_3.png">
+            <!--右浮动
+            这里-->
+        </div>
+    </div>
+</body>
+</html>
